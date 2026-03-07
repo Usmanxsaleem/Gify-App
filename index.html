@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Giphy Search</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <h1>hello world</h1>
-    <p>Lorem, ipsum.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, illum!</p>
+
+<header>
+    <h1>My Giphy Search</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Trending</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<!-- SEARCH FORM -->
+<form id="searchForm" class="search-section">
+    <input type="search" id="searchInput" placeholder="Search GIFs">
+    <button type="submit">Search</button>
+</form>
+
+<!-- RESULTS -->
+<div id="results"></div>
+
+<!-- JS at bottom -->
+<script src="main.js"></script>
+
 </body>
 </html>

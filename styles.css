@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.search-section {
+    margin: 20px 0;
+    display: flex;
+}
+
+.search-section input {
+    padding: 8px;
+    width: 250px;
+}
+
+.search-section button {
+    padding: 8px 12px;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#results img {
+    width: 200px;
+}
