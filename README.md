@@ -80,6 +80,7 @@ https://developers.giphy.com/
 Example API endpoint used:
 
 https://api.giphy.com/v1/gifs/search?api_key=YOUR_API_KEY&q=SEARCH_TERM&limit=12
+
 📚 Learning Outcomes
 
 This project helps developers practice:
