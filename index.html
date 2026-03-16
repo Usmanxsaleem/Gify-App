@@ -3,32 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giphy Search</title>
+    <title>Motion • GIF Search</title>
+    <meta name="description" content="Discover the perfect GIF reaction with Motion — a fast, beautiful GIF search engine powered by Giphy.">
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-    <h1>My Giphy Search</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Trending</a>
-        <a href="#">About</a>
+    <nav class="site-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">GIF<span>.</span></a>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-view="search">Search</a>
+                <a href="#" class="nav-link" data-view="trending">Trending</a>
+            </div>
+        </div>
     </nav>
-</header>
-
-<!-- SEARCH FORM -->
-<form id="searchForm" class="search-section">
-    <input type="search" id="searchInput" placeholder="Search GIFs">
-    <button type="submit">Search</button>
-</form>
-
-<!-- RESULTS -->
-<div id="results"></div>
-
-<!-- JS at bottom -->
-<script src="main.js"></script>
-
+    <main class="app-container">
+        <header class="hero">
+            <h1 id="heroTitle">Find the perfect reaction.</h1>
+            <p id="heroSub">High-quality GIFs sourced directly from Giphy.</p>
+        </header>
+        <section class="search-area" id="searchArea">
+            <form id="searchForm" class="search-box">
+                <div class="input-wrapper">
+                    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="text" id="searchInput" placeholder="Search for GIFs..." autocomplete="off">
+                </div>
+                <button type="submit" id="searchBtn">Search</button>
+            </form>
+        </section>
+        <div id="results" class="results-grid">
+            <div class="empty-state">
+                <div class="empty-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </div>
+                <p>Enter a keyword to start searching</p>
+            </div>
+        </div>
+    </main>
+    <!-- Toast notification -->
+    <div id="toast" class="toast"></div>
+    <script src="main.js"></script>
 </body>
 </html>
